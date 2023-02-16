@@ -1,0 +1,38 @@
+.divider {
+    margin: 10px 0;
+}
+
+.divider {
+    position: relative;
+
+    .err_icons {
+        background-position: -402px -353px !important;
+    }
+
+    .ok_icons {
+        background-position: -402px -330px !important;
+    }
+
+    .icons {
+        background-size: 440px 411px !important;
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transition: .5s;
+        right: 15%;
+        top: 20%;
+    }
+}
+
+.authSubmit {
+    width: 70%;
+    padding: 7px 16px;
+    background-color: rgb(0, 149, 246);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
