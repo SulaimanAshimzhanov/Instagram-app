@@ -30,3 +30,16 @@ ul {
   height: 80px;
   cursor: pointer;
 }
+
+.layout_row {
+  display: flex;
+}
+
+.layout_row .layout_sidebar {
+  width: 335px;
+  height: 100vh;
+}
+
+.layout_row .layout_routes {
+  width: 75%;
+}
