@@ -1,14 +1,17 @@
 import { useForm } from "react-hook-form";
 import { Components } from "../../../components";
 
-import cls from "../../../assets/styles/login/Login.module.scss";
-import Logo from "../../../assets/images/logo/yXM3FgMdVNX.png";
 import { formsValidate } from "../../../helpers/forms";
 import { REQUEST } from "../../../api";
+import { Hooks } from "../../../hooks";
+
+import cls from "../../../assets/styles/login/Login.module.scss";
+import Logo from "../../../assets/images/logo/yXM3FgMdVNX.png";
 
 
 
 export default function Login() {
+  const { goToHome } = Hooks.useLocations();
 
     const {
         register,
@@ -26,6 +29,7 @@ export default function Login() {
 
             localStorage.setItem("access", data.access);
             localStorage.setItem("refresh", data.refresh);
+            goToHome();
           })
       }
     };
