@@ -1,3 +1,4 @@
+import AuthNavigate from "./authNavigate/AuthNavigate";
 import AuthSubmit from "./AuthSubmit/AuthSubmit";
 import Divider from "./Divider/Divider";
 import Errors from "./Err/Errors";
@@ -8,5 +9,6 @@ export const Forms = {
     TextInput,
     Divider,
     AuthSubmit,
-    Errors
+    Errors,
+    AuthNavigate
 };

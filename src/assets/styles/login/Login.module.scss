@@ -4,6 +4,7 @@
     margin-top: 15px;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 
     &_card {
         background-color: white;
@@ -12,6 +13,7 @@
         padding: 10px 0;
         border: 1px solid #eee;
         text-align: center;
+        padding-bottom: 30px;
 
         img {
             object-position: 0 -52px;
@@ -20,6 +22,22 @@
             height: 51px;
             margin-top: 40px;
             cursor: pointer;
+        }
+
+        form {
+            margin-top: 30px;
+
+            input {
+                background-color: rgb(250, 250, 250);
+                margin: 0;
+                border: 1px solid #b3b0b0;
+                outline: none;
+                overflow: hidden;
+                height: 36px;
+                padding: 0 5px;
+                text-overflow: ellipsis;
+                width: 70%;
+            }
         }
     }
 }
