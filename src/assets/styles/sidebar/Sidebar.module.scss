@@ -4,10 +4,11 @@
     border-right: 1px solid rgb(210, 206, 205);
     position: sticky;
     left: 0;
-    top: 0;
+    top: 20px;
 
     &_content {
         padding-left: 25px;
+        height: 85%;
 
         img {
             object-position: 0 -30px;
@@ -16,6 +17,50 @@
             height: 31px;
             margin-top: 40px;
             cursor: pointer;
+        }
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding-top: 35px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+    
+                li {
+                    font-size: 16px;
+                    transition: .1s;
+                    padding: 10px 10px;
+                    border-radius: 25px;
+                    width: 85%;
+    
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        color: black;
+    
+                        svg {
+                            font-size: 26px;
+                        }
+                    }
+
+                    &:hover {
+                        padding: 10px 5px;
+                        border-radius: 25px;
+
+                        background-color: rgba(0, 0, 0, .1);
+
+                        svg {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
         }
     }
 }
