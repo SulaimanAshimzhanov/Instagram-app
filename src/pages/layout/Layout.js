@@ -27,6 +27,10 @@ export default function Layouts() {
         <div className="layout_routes">
             <Switch>
                 <Route path={Layout.home} element={<LayoutPages.Home/>}/>
+                <Route path={Layout.profile} element={<LayoutPages.Profile/>}/>
+                <Route path={Layout.users} element={<LayoutPages.Users/>}/>
+                <Route path={Layout.profileID} element={<LayoutPages.Profile/>}/>
+                <Route path={Layout.subscribers} element={<LayoutPages.Subscribers/>}/>
             </Switch>
         </div>
       </section>

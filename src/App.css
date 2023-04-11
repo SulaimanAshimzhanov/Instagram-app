@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #eee;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -22,7 +21,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .loader img {
@@ -38,8 +36,46 @@ ul {
 .layout_row .layout_sidebar {
   width: 335px;
   height: 100vh;
+  position: relative;
 }
 
 .layout_row .layout_routes {
   width: 75%;
+}
+
+.option_modal {
+  width: 75%;
+  background-color: white;
+  position: absolute;
+  bottom: 10%;
+  left: -100%;
+  transition: .1s;
+  box-shadow: 0 0 5px #eee;
+  
+}
+
+.option_modal.active {
+  left: 10%;
+}
+
+.option_modal ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.option_modal ul li {
+  padding: 12px 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #c5c2c2;
+}
+
+.option_modal ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option_modal ul li a svg {
+  font-size: 25px;
 }

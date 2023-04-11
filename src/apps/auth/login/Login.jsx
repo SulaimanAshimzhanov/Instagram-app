@@ -7,11 +7,13 @@ import { Hooks } from "../../../hooks";
 
 import cls from "../../../assets/styles/login/Login.module.scss";
 import Logo from "../../../assets/images/logo/yXM3FgMdVNX.png";
+import { Providers } from "../../../providers";
 
 
 
 export default function Login() {
   const { goToHome } = Hooks.useLocations();
+  const { setState } = Providers.useAuth();
 
     const {
         register,
@@ -20,6 +22,7 @@ export default function Login() {
     } = useForm();
 
     const onSubmit = (data) => {
+      setState("Recovery");
       if(data) {
         const request = REQUEST.LOGIN_USER(data);
 
@@ -30,6 +33,7 @@ export default function Login() {
             localStorage.setItem("access", data.access);
             localStorage.setItem("refresh", data.refresh);
             goToHome();
+            setState("Logged in!");
           })
       }
     };

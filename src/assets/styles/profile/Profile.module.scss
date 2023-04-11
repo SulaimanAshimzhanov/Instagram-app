@@ -1,0 +1,88 @@
+.profile_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    &_top {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        div {
+            label {
+                input {
+                    display: none;
+                }
+
+                img {
+                    border-radius: 100%;
+                    cursor: pointer;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+
+        &_name {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .profile_follow {
+                padding: 7px 16px;
+                background-color: rgb(0, 149, 246);
+                color: white;
+                border-radius: 8px;
+                border: none;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(12, 113, 180);
+                }
+            }
+
+            button {
+                background: none;
+                background-color: rgb(239, 239, 239);
+                border: none;
+                box-sizing: border-box;
+                border-radius: 8px;
+                cursor: pointer;
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 7px 16px !important;
+                pointer-events: auto;
+                text-align: center;
+                text-overflow: ellipsis;
+                text-transform: inherit;
+                width: auto;
+            }
+        }
+
+        &_follow {
+            margin-top: 15px;
+
+            ul {
+                display: flex;
+                gap: 30px;
+
+                li {
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &_login {
+            margin-top: 20px;
+        }
+
+        
+    }
+}
